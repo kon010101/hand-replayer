@@ -1,0 +1,58 @@
+.table-container {
+  border: 2px black solid;
+  background-image: url("/src/table_images/bgWood1.jpg");
+  background-position: "center";
+  background-size: "cover";
+  background-repeat: "no-repeat";
+  height: 500px;
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.table__field {
+  background-color: rgb(93, 148, 38);
+  box-shadow: -2px -2px 10px 2px inset, 2px 2px 10px 2px inset,
+    2px -2px 10px 2px inset, -2px 2px 10px 2px inset,
+    10px 10px 20px 10px rgba(192, 192, 192, 0.228),
+    10px -10px 20px 10px rgba(192, 192, 192, 0.228),
+    -10px 10px 20px 10px rgba(192, 192, 192, 0.228),
+    -10px -10px 20px 10px rgba(192, 192, 192, 0.228);
+  width: 600px;
+  height: 400px;
+  border: 15px solid brown;
+  border-radius: 50%;
+}
+
+.table__board {
+  position: absolute;
+  display: flex;
+}
+
+.table__pot {
+  position: absolute;
+  top: 160px;
+  color: white;
+}
+
+.table__dealerBtn {
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: brown;
+  position: absolute;
+  bottom: 90px;
+  right: 320px;
+}
+
+.table__dealerBtn > span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  color: white;
+  margin-top: 3px;
+  margin-left: 1px;
+}

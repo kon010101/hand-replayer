@@ -1,0 +1,55 @@
+.player {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.player-container {
+  width: 120px;
+  height: 75px;
+  background-color: rgb(64, 103, 142);
+  color: white;
+  border: 4px black solid;
+  border-radius: 10px;
+  position: absolute;
+  text-align: center;
+  padding: 5px;
+  bottom: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.player__cards {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: -5px;
+  left: 10px;
+}
+
+.player__card1 {
+  position: absolute;
+  top: 0px;
+}
+
+.player__card2 {
+  position: absolute;
+  top: 0px;
+  left: 30px;
+}
+
+.table__bets {
+  position: absolute;
+}
+
+.player__action {
+  width: 100%;
+  height: 20px;
+  background: red;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
