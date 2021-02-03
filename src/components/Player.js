@@ -72,13 +72,24 @@ function Player({
     );
   };
 
+  const getStack = () => {
+    return hand.actions[street].actions
+      .filter((item, index) => index <= actions[street].currAction)
+      .map((action) => {
+        if (action.player === seat.player) {
+          if (action.stackSize) return action.stackSize;
+        }
+      });
+  };
+
+  //TODO: pass in the current action and work with that - so you dont need to iterate so much
   return (
     <div className="player" style={playerPositions[seat.seatno - 1]}>
       <div className="player__cards">{showCards()}</div>
       <div className="player-container">
         {seat.player}
         <br></br>
-        {seat.chips}
+        {getStack()}
         <span class="table__bets" style={tableBetPositions[seat.seatno - 1]}>
           {currentBetSize}
         </span>

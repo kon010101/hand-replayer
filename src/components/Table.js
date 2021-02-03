@@ -66,6 +66,7 @@ function Table({ gParsedHands }) {
 
   //return table elements belonging to players
   const getPlayers = () => {
+    console.log("get players");
     if (!parsedHands || parsedHands.length === 0 || actions.length === 0)
       return "";
     const btnNo = parsedHands[handCounter].table.button;
@@ -88,7 +89,7 @@ function Table({ gParsedHands }) {
       );
     });
 
-    //################''DEBUB ############################
+    //################''DEBUg ############################
     // return players.map((plr, idx) => {
     //   return (
     //     <>
@@ -149,6 +150,8 @@ function Table({ gParsedHands }) {
         ].potSize
       : "";
   };
+
+  console.log(parsedHands);
 
   return (
     <div className="table">
