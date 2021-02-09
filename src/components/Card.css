@@ -1,6 +1,13 @@
 .card {
-  width: 59px;
-  height: 88px;
-  border-radius: 5px;
-  margin: 3px;
+    width: 59px;
+    height: 88px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.card-small {
+    width: 29px;
+    height: 44px;
+    border-radius: 3px;
+    margin: 3px;
 }
