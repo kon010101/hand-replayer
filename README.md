@@ -1,4 +1,16 @@
-# Getting Started with Create React App
+# Poker Hand Replayer
+
+This is a basic hand replayer for poker hands played in online games. It is part of a bigger project and the first version. 
+
+## Features
+
+- parse a hand or hands from file, from 888/pacific poker site
+- view table of data
+- select hands to play in replayer and hit play button in the table
+- replay whole hand with bet sizes and actions
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
